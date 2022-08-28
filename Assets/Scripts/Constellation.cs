@@ -51,6 +51,7 @@ public class Constellation : MonoBehaviour
             ConstellationTile tile = hit.collider.GetComponent<ConstellationTile>();
             if (instance._selected.CanConnect(tile))
             {
+                instance._line.SetPosition(1, hit.transform.position);
                 instance._selected.RemoveConnection();
                 tile.RemoveConnection();
             }
