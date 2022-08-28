@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ConstellationTile : MonoBehaviour
+public class ConstellationTile : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public ConstellationTile connecting;
 
-    private bool active = true;
-    private Image image;
+    [HideInInspector]
+    public bool active = true;
+
+    private LineRenderer _lineRenderer;
+    private int connections = 2;
     
     void Awake()
     {
-        image = GetComponent<Image>();
+        _lineRenderer = GetComponent<LineRenderer>();
+    }
+
+    public LineRenderer GetLineRenderer()
+    {
+        return _lineRenderer;
     }
 
     public bool CanConnect(ConstellationTile tile)
@@ -20,19 +29,38 @@ public class ConstellationTile : MonoBehaviour
         return (tile == connecting) ? true : (tile.connecting == this) ? true : false;
     }
     
-    public void OnClick()
+    public void OnBeginDrag(PointerEventData data)
     {
-        Constellation.HandleSelected(this);
+        if (active)
+        {
+            Constellation.StartDrag(this, transform.position);
+        }
     }
 
-    public void Select()
+    public void RemoveConnection()
     {
-        image.color = Color.red;
+        connections -= 1;
+
+        if (connections <= 0)
+        {
+            active = false;
+        }
+
     }
 
-    public void Deselect()
+    public void OnDrag(PointerEventData data)
     {
-        image.color = Color.white;
+        if (active)
+        {
+            Constellation.Dragging();
+        }
     }
 
+    public void OnEndDrag(PointerEventData data)
+    {
+        if (active)
+        {
+            Constellation.EndDrag();
+        }
+    }
 }

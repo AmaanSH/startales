@@ -5,8 +5,11 @@ using UnityEngine;
 public class Constellation : MonoBehaviour
 {
     public static Constellation instance;
+    public Transform plane;
+    public LineRenderer lineRenderer;
 
     private ConstellationTile _selected;
+    private LineRenderer _line;
 
     void Awake()
     {
@@ -16,32 +19,59 @@ public class Constellation : MonoBehaviour
         }
     }
 
-    public static void HandleSelected(ConstellationTile selected)
+    public static void StartDrag(ConstellationTile tile, Vector3 point)
     {
-        if (instance)
+        LineRenderer lr = Instantiate(instance.lineRenderer, tile.gameObject.transform);
+
+        lr.positionCount += 2;
+        lr.SetPosition(0, point);
+
+        instance._selected = tile;
+        instance._line = lr;
+    }
+
+    public static void Dragging()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = instance.plane.position.z;
+
+        Vector3 position = Camera.main.ScreenToWorldPoint(mousePos);
+        instance._line.SetPosition(1, position);
+    }
+
+    public static void EndDrag()
+    {
+        int layerIndex = LayerMask.NameToLayer("Stars");
+        int layerMask = (1 << layerIndex);
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 50f, layerMask))
         {
-            if (instance._selected == null)
+            ConstellationTile tile = hit.collider.GetComponent<ConstellationTile>();
+            if (instance._selected.CanConnect(tile))
             {
-                instance._selected = selected;
-                selected.Select();
-
-                Debug.LogFormat("Selected: {0}", selected.gameObject.name);
-
-                // TODO: change the colour? 
-                // TODO: draw the line bleh bleh
-                // TODO: sound effects pog
+                instance._selected.RemoveConnection();
+                tile.RemoveConnection();
             }
             else
             {
-                // okay.. lets check to see if the one we selected can connect with the one we had previously selected
-                bool correct = instance._selected.CanConnect(selected);
-                Debug.LogFormat("{0} connecting to {1} - {2}", instance._selected.gameObject.name, selected.gameObject.name, correct);
-
-                instance._selected.Deselect();
-
-                instance._selected = null;
-
+                instance._line.positionCount = 0;
+                Destroy(instance._line.gameObject);
             }
         }
+        else
+        {
+            instance._line.positionCount = 0;
+            Destroy(instance._line.gameObject);
+        }
+
+        instance._selected = null;
+        instance._line = null;
+    }
+
+    public static void Check()
+    {
+
     }
 }
