@@ -11,12 +11,17 @@ public class ConstellationTile : MonoBehaviour, IBeginDragHandler, IDragHandler,
     [HideInInspector]
     public bool active = true;
 
+    [HideInInspector]
+    public ConstellationPattern parent;
+
     private LineRenderer _lineRenderer;
     private int connections = 2;
+    
     
     void Awake()
     {
         _lineRenderer = GetComponent<LineRenderer>();
+        parent = GetComponentInParent<ConstellationPattern>();
     }
 
     public LineRenderer GetLineRenderer()
@@ -33,7 +38,7 @@ public class ConstellationTile : MonoBehaviour, IBeginDragHandler, IDragHandler,
     {
         if (active)
         {
-            Constellation.StartDrag(this, transform.position);
+            ConstellationManager.StartDrag(this, transform.position);
         }
     }
 
@@ -44,15 +49,16 @@ public class ConstellationTile : MonoBehaviour, IBeginDragHandler, IDragHandler,
         if (connections <= 0)
         {
             active = false;
-        }
 
+            parent.ConstellationPointCompleted();
+        }
     }
 
     public void OnDrag(PointerEventData data)
     {
         if (active)
         {
-            Constellation.Dragging();
+            ConstellationManager.Dragging();
         }
     }
 
@@ -60,7 +66,7 @@ public class ConstellationTile : MonoBehaviour, IBeginDragHandler, IDragHandler,
     {
         if (active)
         {
-            Constellation.EndDrag();
+            ConstellationManager.EndDrag();
         }
     }
 }

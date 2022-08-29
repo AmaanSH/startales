@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Constellation : MonoBehaviour
+public class ConstellationManager : MonoBehaviour
 {
-    public static Constellation instance;
+    public static ConstellationManager instance;
     public Transform plane;
     public LineRenderer lineRenderer;
 
@@ -33,7 +33,7 @@ public class Constellation : MonoBehaviour
     public static void Dragging()
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = instance.plane.position.z;
+        mousePos.z = instance._selected.gameObject.transform.position.z;
 
         Vector3 position = Camera.main.ScreenToWorldPoint(mousePos);
         instance._line.SetPosition(1, position);
@@ -69,10 +69,5 @@ public class Constellation : MonoBehaviour
 
         instance._selected = null;
         instance._line = null;
-    }
-
-    public static void Check()
-    {
-
     }
 }
