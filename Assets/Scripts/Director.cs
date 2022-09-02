@@ -25,6 +25,8 @@ public class Director : MonoBehaviour
     {
         if (instance)
         {
+            Debug.LogFormat("Starting scene {0}/{1}", index + 1, instance.scenes.Count);
+
             instance.currentScenes = instance.scenes[index].coreScenes;
             instance.currentSceneIndex = index;
             instance.currentIndex = 0;
@@ -35,6 +37,8 @@ public class Director : MonoBehaviour
 
     public static IEnumerator Play()
     {
+        Debug.LogFormat("Playing {0}/{1}", instance.currentIndex + 1, instance.currentScenes.Count);
+
         CoreScene scene = instance.currentScenes[instance.currentIndex];
 
         yield return instance.StartCoroutine(scene.Play());
@@ -48,7 +52,7 @@ public class Director : MonoBehaviour
            
             if (instance.currentIndex >= instance.currentScenes.Count)
             {
-                // switch...
+                LoadScene(instance.currentSceneIndex + 1);
             }
             else
             {
