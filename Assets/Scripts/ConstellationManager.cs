@@ -123,17 +123,25 @@ public class ConstellationManager : MonoBehaviour
 
         if (instance.completedCount == instance.totalConstellations)
         {
+            SetMode(Mode.VN);
+
+            Dialogue.instance.StopAllCoroutines();
+
+            Director.Next();
+
             instance.currentHolder.gameObject.SetActive(false);
 
             instance.currentHolder = null;
             instance.totalConstellations = 0;
             instance.completedCount = 0;
 
-            SetMode(Mode.VN);
-
-            Background.Show(true);
-            Director.Next();
+            CharacterPanel.instance.Show(true);
         }
+    }
+
+    public static void Cleanup()
+    {
+
     }
 
     public static void StartDrag(ConstellationTile tile, Vector3 point)

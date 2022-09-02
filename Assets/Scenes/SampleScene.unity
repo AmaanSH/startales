@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 1
     text: If there is any issues let us know Fuyumi
@@ -201,7 +202,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 44
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &90798017
 MonoBehaviour:
@@ -216,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 1
     text: "\u2026it was the afternoon"
@@ -521,13 +523,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163610338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 33
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &163610340
 MonoBehaviour:
@@ -541,7 +543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 0
     text: and I said I was sorry! Besides, back then you wanted to keep your epic
@@ -844,6 +847,55 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1669404759914348281, guid: 044e3bdefce1c3943813c6a61c60b631, type: 3}
   m_PrefabInstance: {fileID: 231934900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &239428377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239428378}
+  m_Layer: 0
+  m_Name: Speeches
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239428378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239428377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1453825855}
+  - {fileID: 2047963798}
+  - {fileID: 482464427}
+  - {fileID: 895131022}
+  - {fileID: 1604214914}
+  - {fileID: 1041962403}
+  - {fileID: 1730794344}
+  - {fileID: 892072120}
+  - {fileID: 1947751512}
+  - {fileID: 457715820}
+  - {fileID: 1650082400}
+  - {fileID: 1041476805}
+  - {fileID: 918233246}
+  - {fileID: 1651052744}
+  - {fileID: 163610339}
+  - {fileID: 1603654369}
+  - {fileID: 1955123816}
+  - {fileID: 1361842224}
+  m_Father: {fileID: 457966988}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &240506751
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,27 +944,9 @@ Transform:
   - {fileID: 1749113445}
   - {fileID: 1741621907}
   - {fileID: 475276495}
-  - {fileID: 1453825855}
-  - {fileID: 2047963798}
-  - {fileID: 482464427}
-  - {fileID: 895131022}
-  - {fileID: 1604214914}
-  - {fileID: 1041962403}
-  - {fileID: 1730794344}
-  - {fileID: 892072120}
-  - {fileID: 1947751512}
-  - {fileID: 457715820}
-  - {fileID: 1650082400}
-  - {fileID: 1041476805}
-  - {fileID: 918233246}
-  - {fileID: 1651052744}
-  - {fileID: 163610339}
-  - {fileID: 1603654369}
-  - {fileID: 1955123816}
-  - {fileID: 1361842224}
   - {fileID: 685701785}
-  - {fileID: 806166886}
   - {fileID: 1807583080}
+  - {fileID: 806166886}
   - {fileID: 566805666}
   - {fileID: 2107082745}
   - {fileID: 647617510}
@@ -1645,6 +1679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 1
     text: 'By having a bonfire in the middle of nowhere? '
@@ -1693,6 +1728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: Oi!
@@ -1720,13 +1756,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457715819}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 28
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &457715821
 MonoBehaviour:
@@ -1740,7 +1776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 0
     text: " I mean, considering the scene I saw when I came in it\u2019s rightfully
@@ -1777,6 +1814,7 @@ Transform:
   - {fileID: 987406657}
   - {fileID: 624305510}
   - {fileID: 1145538284}
+  - {fileID: 239428378}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1797,6 +1835,7 @@ MonoBehaviour:
   - {fileID: 987406656}
   - {fileID: 624305511}
   - {fileID: 1145538285}
+  speechToUse: []
 --- !u!1 &475276494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: "Right? Back then only me and keyboard wanted to start a band\u2026."
@@ -1869,13 +1909,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482464426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 21
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &482464428
 MonoBehaviour:
@@ -1889,7 +1929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 1
     text: ' It was a tough spot'
@@ -2076,6 +2117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 3
     text: "You do sound like you\u2019ve been watching too much anime Yuu."
@@ -2258,7 +2300,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 40
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &566805667
 MonoBehaviour:
@@ -2273,6 +2315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: Oh right! We did a sudden song
@@ -2391,7 +2434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2608,7 +2651,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 42
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &647617511
 MonoBehaviour:
@@ -2623,6 +2666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: "And it worked. There was a spark that day wasn\u2019t there? "
@@ -2656,7 +2700,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 45
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &679568956
 MonoBehaviour:
@@ -2671,6 +2715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: I was being metaphorical!
@@ -2704,7 +2749,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 37
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &685701786
 MonoBehaviour:
@@ -2896,7 +2941,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 43
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &753064224
 MonoBehaviour:
@@ -2911,6 +2956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: You could say the stars were aligned that day
@@ -2944,7 +2990,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 38
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &806166887
 MonoBehaviour:
@@ -3216,13 +3262,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892072119}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 26
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &892072121
 MonoBehaviour:
@@ -3236,7 +3282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 0
     text: no no, compliment her more she deserves it
@@ -3264,13 +3311,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895131021}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 22
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &895131023
 MonoBehaviour:
@@ -3284,7 +3331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 3
     text: "I was embarrassed at first, but I\u2019m glad you guys overheard me and
@@ -3313,13 +3361,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918233245}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 31
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &918233247
 MonoBehaviour:
@@ -3333,7 +3381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 1
     text: "I guess we got too excited back then haha\u2026"
@@ -3810,6 +3859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 3
     text: "No no I\u2019m fine now, Yuu just does it out of habit even when she doesn\u2019t
@@ -3859,6 +3909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: Well yeah! How else will I get the ideas to sneak you out of your house
@@ -3887,13 +3938,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041476804}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 30
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1041476806
 MonoBehaviour:
@@ -3907,7 +3958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 0
     text: You two were surrounding poor Fuyumi like a bunch of delinquents! Of course
@@ -3936,13 +3988,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041962402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 24
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1041962404
 MonoBehaviour:
@@ -3956,7 +4008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 1
     text: "I don\u2019t believe in fate, but well\u2026 sometimes it\u2019s right
@@ -4155,6 +4208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: " \u2026Yuu, have you ever considered a career in robbery?"
@@ -4203,6 +4257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 4
     text: '(everyone else laughs) '
@@ -4452,6 +4507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: An essential moment! A time to reflect our passing life before fall comes
@@ -4467,7 +4523,7 @@ GameObject:
   - component: {fileID: 1361842224}
   - component: {fileID: 1361842225}
   m_Layer: 0
-  m_Name: diagloue-drumer
+  m_Name: diagloue-drumer-end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4480,13 +4536,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361842223}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 36
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1361842225
 MonoBehaviour:
@@ -4500,7 +4556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 3
     text: How did we even convince you back then to join? It took me a while but
@@ -4676,7 +4733,7 @@ GameObject:
   - component: {fileID: 1453825855}
   - component: {fileID: 1453825856}
   m_Layer: 0
-  m_Name: diagloue-keyboard
+  m_Name: diagloue-keyboard-cons-start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4689,13 +4746,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453825854}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 19
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1453825856
 MonoBehaviour:
@@ -4709,7 +4766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 1
     text: Right, we had tryouts and everything but everyone was a beginner
@@ -4743,7 +4801,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 46
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1548440290
 MonoBehaviour:
@@ -4758,6 +4816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 4
     text: (more laughter)
@@ -4963,6 +5022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: 'I told her I was sorry! '
@@ -4990,13 +5050,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603654368}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 34
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1603654370
 MonoBehaviour:
@@ -5010,7 +5070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 1
     text: Says the person who also kept her singing a secret
@@ -5038,13 +5099,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604214913}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 23
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1604214915
 MonoBehaviour:
@@ -5058,7 +5119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 2
     text: "How could we not invent you? That was the coolest solo we\u2019ve ever
@@ -5236,13 +5298,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650082399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 29
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1650082401
 MonoBehaviour:
@@ -5256,7 +5318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 2
     text: "That\u2019s right! You tried to hit me! "
@@ -5284,13 +5347,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651052743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 32
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1651052745
 MonoBehaviour:
@@ -5304,7 +5367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 3
     text: Yuu, it was also your fault for jumping conclusions
@@ -5823,13 +5887,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730794343}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 25
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1730794345
 MonoBehaviour:
@@ -5843,7 +5907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 3
     text: "You guys\u2026 you don\u2019t need to exaggerate that much"
@@ -5892,6 +5957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 3
     text: Oh wow that was so long ago
@@ -5940,6 +6006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 1
     text: Hey, remember the time we met, though?
@@ -5973,7 +6040,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 47
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1785445607
 MonoBehaviour:
@@ -5988,6 +6055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 3
     text: It was truly the day (band name) was born
@@ -6021,7 +6089,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 39
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1807583081
 MonoBehaviour:
@@ -6036,6 +6104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   consId: intro
+  speechHolder: {fileID: 239428377}
 --- !u!1001 &1825182861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6230,6 +6299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: 'You sound like an old man, Yuu '
@@ -6578,13 +6648,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947751511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 27
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1947751513
 MonoBehaviour:
@@ -6598,7 +6668,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 3
     text: Yuu!!
@@ -6626,13 +6697,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955123815}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 35
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1955123817
 MonoBehaviour:
@@ -6646,7 +6717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 2
     text: "Right? I can\u2019t believe you thought you were bad at singing."
@@ -6779,6 +6851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 2
     text: I thought your parents are okay now?
@@ -6806,13 +6879,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047963797}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 240506752}
-  m_RootOrder: 20
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2047963799
 MonoBehaviour:
@@ -6826,7 +6899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: 1
+  blocker: 0
+  characterImageInSpeech: 1
   speech:
     character: 2
     text: 'Or tried to take our spots, like come on it was clear I was the guitarist
@@ -6876,6 +6950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: "Now this is what I\u2019m talking about! Ah, our summer youth is being
@@ -6925,6 +7000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 0
+  characterImageInSpeech: 0
   speech:
     character: 0
     text: 'And leave the band!? No way! '
@@ -6958,7 +7034,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 41
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2107082746
 MonoBehaviour:
@@ -6973,6 +7049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocker: 1
+  characterImageInSpeech: 0
   speech:
     character: 1
     text: You mean you convinced the rest of us to follow your lead
@@ -7136,14 +7213,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
-    - target: {fileID: 2872534533175165841, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 2969798811095393094, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8024420700254365407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
-      propertyPath: characterPanel
-      value: 
-      objectReference: {fileID: 5424822736021947496}
+    - target: {fileID: 2969798811095393094, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969798811095393094, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2969798811095393094, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7198,15 +7283,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7437,17 +7522,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3591262589389461605, guid: ca7dfeeff0194b44f8977a0a82b8264d, type: 3}
   m_PrefabInstance: {fileID: 5424822736021947493}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5424822736021947496 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2587099015495711806, guid: ca7dfeeff0194b44f8977a0a82b8264d, type: 3}
-  m_PrefabInstance: {fileID: 5424822736021947493}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499a668840c3fb94b8e78cce4aeb7d3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8930838722984200352
 PrefabInstance:
   m_ObjectHideFlags: 0

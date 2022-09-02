@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.WSA;
 using System;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class Dialogue : MonoBehaviour
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
+    public Image characterImage;
 
-    public delegate void EventHandler();
-    public event EventHandler callback;
     private bool finished;
     private bool skip;
+
+    private bool constellationMode;
+
+    private List<Speech> speeches = new List<Speech>();
+    private int currentIndex = 0;
 
     private void Awake()
     {
@@ -26,17 +31,45 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public IEnumerator SetText(string text, Character character, EventHandler cb = null)
+    private IEnumerator AutoSkip()
     {
-        if (cb != null)
+        if (currentIndex < speeches.Count - 1)
         {
-            callback += cb;
+            yield return new WaitForSeconds(1.0f);
+
+            currentIndex++;
+
+            Speech current = speeches[currentIndex];
+            StartCoroutine(SetText(current.text, current.character, true));
         }
         else
         {
-            callback -= cb;
+            currentIndex = 0;
+            speeches = new List<Speech>();
+
+            gameObject.SetActive(false);
+        }
+    }
+
+    public void LoadDialogues(List<DialogueScene> diagloueScenes)
+    {
+        speeches = new List<Speech>();
+
+        for (int i = 0; i < diagloueScenes.Count; i++)
+        {
+            speeches.Add(diagloueScenes[i].speech);
         }
 
+        currentIndex = 0;
+        Speech speech = speeches[0];
+        
+        gameObject.SetActive(true);
+
+        StartCoroutine(SetText(speech.text, speech.character, true));
+    }
+
+    public IEnumerator SetText(string text, Character character, bool characterInSpeech)
+    {
         gameObject.SetActive(true);
 
         if (character == Character.None)
@@ -53,6 +86,24 @@ public class Dialogue : MonoBehaviour
         }
 
         string name = Characters.GetCharacterName(character);
+        
+        if (characterInSpeech)
+        {
+            constellationMode = true;
+            
+            CharacterPanel.instance.Show(false);
+            Sprite sprite = Characters.GetCharacterSprite(character);
+
+            characterImage.sprite = sprite;
+            characterImage.gameObject.SetActive(true);  
+        }
+        else
+        {
+            CharacterPanel.instance.Show(true);
+            characterImage.gameObject.SetActive(false);
+
+            constellationMode = false;
+        }
 
         finished = false;
         skip = false;
@@ -101,25 +152,26 @@ public class Dialogue : MonoBehaviour
         {
             speechText.maxVisibleCharacters = totalVisibleCharacters;
         }
+
+        if (constellationMode)
+        {
+            StartCoroutine(AutoSkip());
+        }
     }
 
     public void NextOption()
     {
-        if (!skip && !finished)
+        if (!constellationMode)
         {
-            skip = true;
-        }
-        else
-        {
-            gameObject.SetActive(false);
-
-            if (callback == null)
+            if (!skip && !finished)
             {
-                Director.Next();
+                skip = true;
             }
             else
             {
-                callback();
+                gameObject.SetActive(false);
+
+                Director.Next();
             }
         }
     }
