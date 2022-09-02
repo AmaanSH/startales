@@ -1,6 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+public enum Mode
+{
+    VN,
+    Constellation
+}
 
 public class ConstellationManager : MonoBehaviour
 {
@@ -8,14 +15,124 @@ public class ConstellationManager : MonoBehaviour
     public Transform plane;
     public LineRenderer lineRenderer;
 
+    public List<ConsHolder> cons;
+
+    public float cameraSpeed = 2f;
+
+    public Image blocker;
+
     private ConstellationTile _selected;
     private LineRenderer _line;
+
+    private ConsHolder currentHolder;
+    private int totalConstellations;
+    private int completedCount;
+
+    private Mode mode;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
+        }
+    }
+
+    public static void SetMode(Mode md)
+    {
+        instance.mode = md;
+    }
+
+    public static void SetBlocker(bool active)
+    {
+        instance.blocker.gameObject.SetActive(active);
+    }
+
+    private void Update()
+    {
+        // check if mouse is in focus of application
+        if (Application.isFocused && mode == Mode.Constellation)
+        {
+            Vector3 mousePosition = Input.mousePosition;
+            Vector3 viewportMousePosition = new Vector2(mousePosition.x / Screen.width, mousePosition.y / Screen.height);
+
+            // check if mouse is in the outermost 10% of the screen
+            if (viewportMousePosition.x < 0.1f || viewportMousePosition.x > 0.9f || viewportMousePosition.y < 0.1f || viewportMousePosition.y > 0.9f)
+            {
+                if (mousePosition.x <= 0)
+                {
+                    MoveCamera("left");
+                }
+                else if (mousePosition.x >= Screen.width - 1)
+                {
+                    MoveCamera("right");
+                }
+
+                if (mousePosition.y <= 0)
+                {
+                    MoveCamera("down");
+                }
+                else if (mousePosition.y >= Screen.height - 1)
+                {
+                    MoveCamera("up");
+                }
+            }
+        }
+    }
+    
+    private void MoveCamera(string direction)
+    {
+        switch (direction)
+        {
+            case "right":
+                Camera.main.transform.Translate(new Vector3(cameraSpeed * Time.deltaTime, 0, 0));
+                break;
+            case "left":
+                Camera.main.transform.Translate(new Vector3(-cameraSpeed * Time.deltaTime, 0, 0));
+                break;
+            case "down":
+                Camera.main.transform.Translate(new Vector3(0, -cameraSpeed * Time.deltaTime, 0));
+                break;
+            case "up":
+                Camera.main.transform.Translate(new Vector3(0, cameraSpeed * Time.deltaTime, 0));
+                break;
+        }
+
+        // clamp camera so it does not move past the top or bottom or left or right of the plane
+        float clampNumber = 2;
+        Camera.main.transform.position = new Vector3(Mathf.Clamp(Camera.main.transform.position.x, plane.position.x - clampNumber, plane.position.x + clampNumber), Mathf.Clamp(Camera.main.transform.position.y, plane.position.y - clampNumber, plane.position.y + clampNumber), Camera.main.transform.position.z);
+    }
+
+    public static void StartConsetllation(string name)
+    {
+        ConsHolder holder = instance.cons.Find(x => x.id == name);
+        if (holder)
+        {
+            instance.currentHolder = holder;
+            instance.totalConstellations = holder.consPatterns.Count;
+
+            Background.Show(false);
+
+            holder.gameObject.SetActive(true);
+        }
+    }
+
+    public static void IncrementCompleted()
+    {
+        instance.completedCount += 1;
+
+        if (instance.completedCount == instance.totalConstellations)
+        {
+            instance.currentHolder.gameObject.SetActive(false);
+
+            instance.currentHolder = null;
+            instance.totalConstellations = 0;
+            instance.completedCount = 0;
+
+            SetMode(Mode.VN);
+
+            Background.Show(true);
+            Director.Next();
         }
     }
 

@@ -153,7 +153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &45945886
 MonoBehaviour:
@@ -167,9 +167,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 1
     text: If there is any issues let us know Fuyumi
+--- !u!1 &90798015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90798016}
+  - component: {fileID: 90798017}
+  m_Layer: 0
+  m_Name: keyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90798016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90798015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &90798017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90798015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: "\u2026it was the afternoon"
 --- !u!1001 &104229651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -448,6 +497,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &163610338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163610339}
+  - component: {fileID: 163610340}
+  m_Layer: 0
+  m_Name: diagloue-singer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163610339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163610338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &163610340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163610338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 0
+    text: and I said I was sorry! Besides, back then you wanted to keep your epic
+      drumming a secret and I wanted to protect that
 --- !u!1001 &217889775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,6 +874,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 691875047}
+  - {fileID: 930137747}
   - {fileID: 2082916470}
   - {fileID: 441014519}
   - {fileID: 1286207983}
@@ -793,6 +892,35 @@ Transform:
   - {fileID: 1749113445}
   - {fileID: 1741621907}
   - {fileID: 475276495}
+  - {fileID: 1453825855}
+  - {fileID: 2047963798}
+  - {fileID: 482464427}
+  - {fileID: 895131022}
+  - {fileID: 1604214914}
+  - {fileID: 1041962403}
+  - {fileID: 1730794344}
+  - {fileID: 892072120}
+  - {fileID: 1947751512}
+  - {fileID: 457715820}
+  - {fileID: 1650082400}
+  - {fileID: 1041476805}
+  - {fileID: 918233246}
+  - {fileID: 1651052744}
+  - {fileID: 163610339}
+  - {fileID: 1603654369}
+  - {fileID: 1955123816}
+  - {fileID: 1361842224}
+  - {fileID: 685701785}
+  - {fileID: 806166886}
+  - {fileID: 1807583080}
+  - {fileID: 566805666}
+  - {fileID: 2107082745}
+  - {fileID: 647617510}
+  - {fileID: 753064223}
+  - {fileID: 90798016}
+  - {fileID: 679568955}
+  - {fileID: 1548440289}
+  - {fileID: 1785445606}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1119,7 +1247,7 @@ GameObject:
   - component: {fileID: 266511566}
   - component: {fileID: 266511565}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Blocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1158,7 +1286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.3301887, g: 0.3286312, b: 0.3286312, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1273,7 +1401,7 @@ RectTransform:
   m_Children:
   - {fileID: 1569507773}
   m_Father: {fileID: 1829312767}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1465,8 +1593,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403355436}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0.87, z: 2.97}
-  m_LocalScale: {x: 3.5546, y: 1, z: 1.9131}
+  m_LocalPosition: {x: 0.7619, y: 1.7237, z: 2.97}
+  m_LocalScale: {x: 1.6639179, y: 1, z: 1.0598266}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1502,7 +1630,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &441014520
 MonoBehaviour:
@@ -1516,6 +1644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 1
     text: 'By having a bonfire in the middle of nowhere? '
@@ -1549,7 +1678,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &442473170
 MonoBehaviour:
@@ -1563,9 +1692,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 2
     text: Oi!
+--- !u!1 &457715819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457715820}
+  - component: {fileID: 457715821}
+  m_Layer: 0
+  m_Name: diagloue-singer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457715820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457715819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457715821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457715819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 0
+    text: " I mean, considering the scene I saw when I came in it\u2019s rightfully
+      deserved."
 --- !u!1 &457966987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,6 +1754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457966988}
+  - component: {fileID: 457966989}
   m_Layer: 0
   m_Name: Introduction_Constellation
   m_TagString: Untagged
@@ -1600,6 +1780,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457966989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457966987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e65fd42eae50ad489b76fbf070619a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: intro
+  consPatterns:
+  - {fileID: 987406656}
+  - {fileID: 624305511}
+  - {fileID: 1145538285}
 --- !u!1 &475276494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1827,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &475276496
 MonoBehaviour:
@@ -1644,9 +1841,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 1
   speech:
     character: 2
     text: "Right? Back then only me and keyboard wanted to start a band\u2026."
+--- !u!1 &482464426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 482464427}
+  - component: {fileID: 482464428}
+  m_Layer: 0
+  m_Name: diagloue-keyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &482464427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482464426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &482464428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482464426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: ' It was a tough spot'
 --- !u!1001 &487654483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1815,7 +2061,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &498815082
 MonoBehaviour:
@@ -1829,6 +2075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 3
     text: "You do sound like you\u2019ve been watching too much anime Yuu."
@@ -1981,6 +2228,54 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1669404759914348281, guid: 044e3bdefce1c3943813c6a61c60b631, type: 3}
   m_PrefabInstance: {fileID: 539826325}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &566805665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566805666}
+  - component: {fileID: 566805667}
+  m_Layer: 0
+  m_Name: guitarist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &566805666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566805665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &566805667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566805665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 2
+    text: Oh right! We did a sudden song
 --- !u!1 &624305509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,7 +2338,97 @@ MonoBehaviour:
   - {fileID: 1723254759}
   completedSprite: {fileID: 21300000, guid: 07e94890288b35d40a9b8bbdaada63db, type: 3}
   spriteRenderer: {fileID: 1978617300}
-  sceneToPlayWhenComplete: {fileID: 0}
+  speechToLoad: []
+--- !u!1 &632686164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632686165}
+  - component: {fileID: 632686167}
+  - component: {fileID: 632686166}
+  - component: {fileID: 632686168}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &632686165
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632686164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1829312767}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &632686166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632686164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &632686167
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632686164}
+  m_CullTransparentMesh: 1
+--- !u!114 &632686168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632686164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29855e6ea3f16e5498a655f16bdff94c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holder: {fileID: 632686166}
 --- !u!1001 &642467525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2193,6 +2578,147 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1669404759914348281, guid: 044e3bdefce1c3943813c6a61c60b631, type: 3}
   m_PrefabInstance: {fileID: 642467525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &647617509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647617510}
+  - component: {fileID: 647617511}
+  m_Layer: 0
+  m_Name: guitarist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &647617510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647617509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &647617511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647617509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 2
+    text: "And it worked. There was a spark that day wasn\u2019t there? "
+--- !u!1 &679568954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 679568955}
+  - component: {fileID: 679568956}
+  m_Layer: 0
+  m_Name: singer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &679568955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679568954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679568956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679568954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 0
+    text: I was being metaphorical!
+--- !u!1 &685701784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 685701785}
+  - component: {fileID: 685701786}
+  m_Layer: 0
+  m_Name: blocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685701785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685701784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &685701786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685701784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c7f20ec3d3c0f4ea434ef210655dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 0
 --- !u!1 &691875046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,6 +2866,99 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &753064222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753064223}
+  - component: {fileID: 753064224}
+  m_Layer: 0
+  m_Name: singer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &753064223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753064222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753064224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753064222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 0
+    text: You could say the stars were aligned that day
+--- !u!1 &806166885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 806166886}
+  - component: {fileID: 806166887}
+  m_Layer: 0
+  m_Name: background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &806166886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806166885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806166887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806166885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
 --- !u!1 &831855534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,6 +3192,196 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1669404759914348281, guid: 044e3bdefce1c3943813c6a61c60b631, type: 3}
   m_PrefabInstance: {fileID: 860907283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &892072119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892072120}
+  - component: {fileID: 892072121}
+  m_Layer: 0
+  m_Name: diagloue-singer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892072120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892072119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &892072121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892072119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 0
+    text: no no, compliment her more she deserves it
+--- !u!1 &895131021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895131022}
+  - component: {fileID: 895131023}
+  m_Layer: 0
+  m_Name: diagloue-drummer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895131022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895131021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895131023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895131021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 3
+    text: "I was embarrassed at first, but I\u2019m glad you guys overheard me and
+      invited me to the band"
+--- !u!1 &918233245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918233246}
+  - component: {fileID: 918233247}
+  m_Layer: 0
+  m_Name: diagloue-keytboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &918233246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918233245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918233247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918233245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: "I guess we got too excited back then haha\u2026"
+--- !u!1 &930137746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930137747}
+  - component: {fileID: 930137748}
+  m_Layer: 0
+  m_Name: background-set
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930137747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930137746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &930137748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930137746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
 --- !u!1001 &933121028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2873,7 +3682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.646, y: 1, z: -1.472}
+  m_LocalPosition: {x: 0, y: 1, z: -1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2933,7 +3742,7 @@ MonoBehaviour:
   - {fileID: 1548680304}
   completedSprite: {fileID: 21300000, guid: 5f9cb04c3bc9df7438bcf2675f3d7c6b, type: 3}
   spriteRenderer: {fileID: 831855535}
-  sceneToPlayWhenComplete: {fileID: 0}
+  speechToLoad: []
 --- !u!4 &987406657
 Transform:
   m_ObjectHideFlags: 0
@@ -2986,7 +3795,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1022596323
 MonoBehaviour:
@@ -3000,6 +3809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 3
     text: "No no I\u2019m fine now, Yuu just does it out of habit even when she doesn\u2019t
@@ -3034,7 +3844,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1037017006
 MonoBehaviour:
@@ -3048,10 +3858,109 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 0
     text: Well yeah! How else will I get the ideas to sneak you out of your house
       Fuyumi?
+--- !u!1 &1041476804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041476805}
+  - component: {fileID: 1041476806}
+  m_Layer: 0
+  m_Name: diagloue-singer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1041476805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041476804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1041476806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041476804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 0
+    text: You two were surrounding poor Fuyumi like a bunch of delinquents! Of course
+      I had to protect my friend!
+--- !u!1 &1041962402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041962403}
+  - component: {fileID: 1041962404}
+  m_Layer: 0
+  m_Name: diagloue-keyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1041962403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041962402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1041962404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041962402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: "I don\u2019t believe in fate, but well\u2026 sometimes it\u2019s right
+      I guess."
 --- !u!1001 &1057965430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3231,7 +4140,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1099398665
 MonoBehaviour:
@@ -3245,6 +4154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 2
     text: " \u2026Yuu, have you ever considered a career in robbery?"
@@ -3278,7 +4188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1115850389
 MonoBehaviour:
@@ -3292,6 +4202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 4
     text: '(everyone else laughs) '
@@ -3357,7 +4268,7 @@ MonoBehaviour:
   - {fileID: 251814794}
   completedSprite: {fileID: 21300000, guid: 87dfd980a952237429e857d548fb867f, type: 3}
   spriteRenderer: {fileID: 944149066}
-  sceneToPlayWhenComplete: {fileID: 0}
+  speechToLoad: []
 --- !u!1001 &1239964316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3526,7 +4437,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1286207984
 MonoBehaviour:
@@ -3540,10 +4451,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 0
     text: An essential moment! A time to reflect our passing life before fall comes
       again
+--- !u!1 &1361842223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1361842224}
+  - component: {fileID: 1361842225}
+  m_Layer: 0
+  m_Name: diagloue-drumer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1361842224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361842223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1361842225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361842223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 3
+    text: How did we even convince you back then to join? It took me a while but
+      you were more stubborn.
 --- !u!1001 &1408059091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3704,6 +4665,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3728ffbc06e1514baae5a06ca1ecb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1453825854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453825855}
+  - component: {fileID: 1453825856}
+  m_Layer: 0
+  m_Name: diagloue-keyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1453825855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453825854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453825856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453825854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: Right, we had tryouts and everything but everyone was a beginner
+--- !u!1 &1548440288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548440289}
+  - component: {fileID: 1548440290}
+  m_Layer: 0
+  m_Name: narrator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1548440289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548440288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548440290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548440288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 4
+    text: (more laughter)
 --- !u!114 &1548680304 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6202554003198144362, guid: 044e3bdefce1c3943813c6a61c60b631, type: 3}
@@ -3891,7 +4948,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1577281345
 MonoBehaviour:
@@ -3905,9 +4962,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 0
     text: 'I told her I was sorry! '
+--- !u!1 &1603654368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603654369}
+  - component: {fileID: 1603654370}
+  m_Layer: 0
+  m_Name: diagloue-keyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603654369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603654368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603654370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603654368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: Says the person who also kept her singing a secret
+--- !u!1 &1604214913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604214914}
+  - component: {fileID: 1604214915}
+  m_Layer: 0
+  m_Name: diagloue-guitarist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1604214914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604214913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604214915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604214913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 2
+    text: "How could we not invent you? That was the coolest solo we\u2019ve ever
+      heard!"
 --- !u!1001 &1641665778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4057,6 +5212,102 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1669404759914348281, guid: 044e3bdefce1c3943813c6a61c60b631, type: 3}
   m_PrefabInstance: {fileID: 1641665778}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1650082399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650082400}
+  - component: {fileID: 1650082401}
+  m_Layer: 0
+  m_Name: diagloue-guitarist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650082400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650082399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650082401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650082399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 2
+    text: "That\u2019s right! You tried to hit me! "
+--- !u!1 &1651052743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651052744}
+  - component: {fileID: 1651052745}
+  m_Layer: 0
+  m_Name: diagloue-drummer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1651052744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651052743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1651052745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651052743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 3
+    text: Yuu, it was also your fault for jumping conclusions
 --- !u!1 &1652160838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,6 +5359,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 403355440}
   lineRenderer: {fileID: 139197531}
+  cons:
+  - {fileID: 457966989}
+  cameraSpeed: 5
+  blocker: {fileID: 266511565}
 --- !u!1001 &1672121139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4544,6 +5799,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3728ffbc06e1514baae5a06ca1ecb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1730794343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730794344}
+  - component: {fileID: 1730794345}
+  m_Layer: 0
+  m_Name: diagloue-drummer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1730794344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730794343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730794345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730794343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 3
+    text: "You guys\u2026 you don\u2019t need to exaggerate that much"
 --- !u!1 &1741621906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,7 +5877,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1741621908
 MonoBehaviour:
@@ -4588,6 +5891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 3
     text: Oh wow that was so long ago
@@ -4621,7 +5925,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1749113446
 MonoBehaviour:
@@ -4635,9 +5939,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 1
     text: Hey, remember the time we met, though?
+--- !u!1 &1785445605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785445606}
+  - component: {fileID: 1785445607}
+  m_Layer: 0
+  m_Name: drummer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785445606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785445605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1785445607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785445605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 3
+    text: It was truly the day (band name) was born
+--- !u!1 &1807583079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807583080}
+  - component: {fileID: 1807583081}
+  m_Layer: 0
+  m_Name: constallation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807583080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807583079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1807583081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807583079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f279f0e7675f38a40ae5d62897fd6d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  consId: intro
 --- !u!1001 &1825182861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4817,7 +6215,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1827087652
 MonoBehaviour:
@@ -4831,6 +6229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 2
     text: 'You sound like an old man, Yuu '
@@ -4927,6 +6326,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 266511564}
+  - {fileID: 632686165}
   - {fileID: 5424822736021947494}
   - {fileID: 5396688182992480454}
   - {fileID: 364452849}
@@ -5154,6 +6554,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1947751511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947751512}
+  - component: {fileID: 1947751513}
+  m_Layer: 0
+  m_Name: diagloue-drummer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947751512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947751511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947751513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947751511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 3
+    text: Yuu!!
+--- !u!1 &1955123815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955123816}
+  - component: {fileID: 1955123817}
+  m_Layer: 0
+  m_Name: diagloue-guitarist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1955123816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955123815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1955123817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955123815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 2
+    text: "Right? I can\u2019t believe you thought you were bad at singing."
 --- !u!1 &1978617298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5268,7 +6764,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2016421132
 MonoBehaviour:
@@ -5282,9 +6778,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 2
     text: I thought your parents are okay now?
+--- !u!1 &2047963797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047963798}
+  - component: {fileID: 2047963799}
+  m_Layer: 0
+  m_Name: diagloue-guitarist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047963798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047963797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2047963799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047963797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 2
+    text: 'Or tried to take our spots, like come on it was clear I was the guitarist
+      and yet people with guitars kept coming '
 --- !u!1 &2082916469
 GameObject:
   m_ObjectHideFlags: 0
@@ -5315,7 +6861,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2082916471
 MonoBehaviour:
@@ -5329,6 +6875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 0
     text: "Now this is what I\u2019m talking about! Ah, our summer youth is being
@@ -5363,7 +6910,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 240506752}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2093500166
 MonoBehaviour:
@@ -5377,9 +6924,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blocker: 0
   speech:
     character: 0
     text: 'And leave the band!? No way! '
+--- !u!1 &2107082744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107082745}
+  - component: {fileID: 2107082746}
+  m_Layer: 0
+  m_Name: keyboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107082745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107082744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240506752}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107082746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107082744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 1
+  speech:
+    character: 1
+    text: You mean you convinced the rest of us to follow your lead
 --- !u!1001 &2861958221394266680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5558,7 +7154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5680,7 +7276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3591262589389461605, guid: ca7dfeeff0194b44f8977a0a82b8264d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3591262589389461605, guid: ca7dfeeff0194b44f8977a0a82b8264d, type: 3}
       propertyPath: m_AnchorMax.x

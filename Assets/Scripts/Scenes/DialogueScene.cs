@@ -11,10 +11,13 @@ public class Speech
 
 public class DialogueScene : CoreScene
 {
+    public bool blocker;
     public Speech speech;
 
     public override IEnumerator Play()
     {
+        ConstellationManager.SetBlocker(blocker);
+
         yield return StartCoroutine(Dialogue.instance.SetText(speech.text, speech.character));
     }
 }

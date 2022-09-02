@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.WSA;
+using System;
 
 public class Dialogue : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
 
+    public delegate void EventHandler();
+    public event EventHandler callback;
     private bool finished;
     private bool skip;
 
@@ -23,8 +26,17 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public IEnumerator SetText(string text, Character character)
-    { 
+    public IEnumerator SetText(string text, Character character, EventHandler cb = null)
+    {
+        if (cb != null)
+        {
+            callback += cb;
+        }
+        else
+        {
+            callback -= cb;
+        }
+
         gameObject.SetActive(true);
 
         if (character == Character.None)
@@ -39,8 +51,6 @@ public class Dialogue : MonoBehaviour
             
             CharacterPanel.instance.SetTalking(character);
         }
-
-        // TODO: make non talking characters grayscale
 
         string name = Characters.GetCharacterName(character);
 
@@ -103,8 +113,14 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
 
-            // load next dialogue
-            Director.Next();
+            if (callback == null)
+            {
+                Director.Next();
+            }
+            else
+            {
+                callback();
+            }
         }
     }
 }

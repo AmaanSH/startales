@@ -88,4 +88,9 @@ public class CharacterPanel : MonoBehaviour
             }
         }
     }
+
+    public void Show(bool active)
+    {
+        gameObject.SetActive(active);
+    }
 }

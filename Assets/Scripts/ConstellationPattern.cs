@@ -8,7 +8,10 @@ public class ConstellationPattern : MonoBehaviour
     public Sprite completedSprite;
     public SpriteRenderer spriteRenderer;
 
+    public List<Speech> speechToLoad;
+
     private int completed = 0;
+    private int speechIndex = 0;
 
     public void ConstellationPointCompleted()
     {
@@ -17,10 +20,7 @@ public class ConstellationPattern : MonoBehaviour
         if (completed == points.Count)
         {
             spriteRenderer.sprite = completedSprite;
+            ConstellationManager.IncrementCompleted();
         }
-
-        // TODO dialogue
-        // TODO effect?
-
     }
 }
