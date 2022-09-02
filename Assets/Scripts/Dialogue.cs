@@ -22,6 +22,9 @@ public class Dialogue : MonoBehaviour
     private List<Speech> speeches = new List<Speech>();
     private int currentIndex = 0;
 
+    [HideInInspector]
+    public bool storyCompleted;
+
     private void Awake()
     {
         if (instance == null)
@@ -46,14 +49,23 @@ public class Dialogue : MonoBehaviour
         {
             currentIndex = 0;
             speeches = new List<Speech>();
-
-            gameObject.SetActive(false);
+            
+            if (ConstellationManager.GetMode() == Mode.VN)
+            {
+                // assume the constellation is already done
+                ConstellationManager.Cleanup();
+            }
+            else
+            {
+                storyCompleted = true;
+            }
         }
     }
 
     public void LoadDialogues(List<DialogueScene> diagloueScenes)
     {
         speeches = new List<Speech>();
+        storyCompleted = false;
 
         for (int i = 0; i < diagloueScenes.Count; i++)
         {
@@ -92,10 +104,18 @@ public class Dialogue : MonoBehaviour
             constellationMode = true;
             
             CharacterPanel.instance.Show(false);
-            Sprite sprite = Characters.GetCharacterSprite(character);
 
-            characterImage.sprite = sprite;
-            characterImage.gameObject.SetActive(true);  
+            if (character != Character.None)
+            {
+                Sprite sprite = Characters.GetCharacterSprite(character);
+
+                characterImage.sprite = sprite;
+                characterImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                characterImage.gameObject.SetActive(false);
+            }
         }
         else
         {

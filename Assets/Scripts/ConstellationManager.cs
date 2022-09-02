@@ -38,6 +38,11 @@ public class ConstellationManager : MonoBehaviour
         }
     }
 
+    public static Mode GetMode()
+    {
+        return instance.mode;
+    }
+
     public static void SetMode(Mode md)
     {
         instance.mode = md;
@@ -125,23 +130,32 @@ public class ConstellationManager : MonoBehaviour
         {
             SetMode(Mode.VN);
 
-            Dialogue.instance.StopAllCoroutines();
+            // only continue if the story segement is over
+            if (Dialogue.instance.storyCompleted)
+            {
+                Dialogue.instance.StopAllCoroutines();
+                Director.Next();
 
-            Director.Next();
-
-            instance.currentHolder.gameObject.SetActive(false);
-
-            instance.currentHolder = null;
-            instance.totalConstellations = 0;
-            instance.completedCount = 0;
-
-            CharacterPanel.instance.Show(true);
+                instance.currentHolder.gameObject.SetActive(false);
+                instance.currentHolder = null;
+                instance.totalConstellations = 0;
+                instance.completedCount = 0;
+                
+                CharacterPanel.instance.Show(true);
+            }
         }
     }
 
     public static void Cleanup()
     {
+        instance.currentHolder.gameObject.SetActive(false);
+        CharacterPanel.instance.Show(true);
 
+        instance.currentHolder = null;
+        instance.totalConstellations = 0;
+        instance.completedCount = 0;
+
+        Director.Next();
     }
 
     public static void StartDrag(ConstellationTile tile, Vector3 point)
