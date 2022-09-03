@@ -98,7 +98,9 @@ public class Dialogue : MonoBehaviour
         }
 
         string name = Characters.GetCharacterName(character);
-        
+
+        LogCanvas.AddEntry(name, text);
+
         if (characterInSpeech)
         {
             constellationMode = true;
