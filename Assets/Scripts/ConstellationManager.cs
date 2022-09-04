@@ -14,6 +14,7 @@ public class ConstellationManager : MonoBehaviour
     public static ConstellationManager instance;
     public Transform plane;
     public LineRenderer lineRenderer;
+    public ConsCanvas consCanvas;
 
     public List<ConsHolder> cons;
 
@@ -108,7 +109,7 @@ public class ConstellationManager : MonoBehaviour
         Camera.main.transform.position = new Vector3(Mathf.Clamp(Camera.main.transform.position.x, plane.position.x - clampNumber, plane.position.x + clampNumber), Mathf.Clamp(Camera.main.transform.position.y, plane.position.y - clampNumber, plane.position.y + clampNumber), Camera.main.transform.position.z);
     }
 
-    public static void StartConsetllation(string name)
+    public static void StartConsetllation(string name, bool playMusic)
     {
         ConsHolder holder = instance.cons.Find(x => x.id == name);
         if (holder)
@@ -118,13 +119,23 @@ public class ConstellationManager : MonoBehaviour
 
             Background.Show(false);
 
+            instance.consCanvas.UpdateReamining(instance.totalConstellations, instance.completedCount);
+
             holder.gameObject.SetActive(true);
+            instance.consCanvas.gameObject.SetActive(true);
+
+            if (playMusic)
+            {
+                MusicManager.PlayAudio("reflection");
+            }
         }
     }
 
     public static void IncrementCompleted()
     {
         instance.completedCount += 1;
+
+        instance.consCanvas.UpdateReamining(instance.totalConstellations, instance.completedCount);
 
         if (instance.completedCount == instance.totalConstellations)
         {
@@ -142,6 +153,7 @@ public class ConstellationManager : MonoBehaviour
                 instance.completedCount = 0;
                 
                 CharacterPanel.instance.Show(true);
+                instance.consCanvas.gameObject.SetActive(false);
             }
         }
     }
@@ -154,6 +166,8 @@ public class ConstellationManager : MonoBehaviour
         instance.currentHolder = null;
         instance.totalConstellations = 0;
         instance.completedCount = 0;
+
+        instance.consCanvas.gameObject.SetActive(false);
 
         Director.Next();
     }

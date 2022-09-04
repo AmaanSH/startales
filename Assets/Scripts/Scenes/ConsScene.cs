@@ -6,13 +6,14 @@ using System.Linq;
 public class ConsScene : CoreScene
 {
     public string consId;
+    public bool playPuzzleMusic;
     public GameObject speechHolder;
 
     public override IEnumerator Play()
     {
         ConstellationManager.SetMode(Mode.Constellation);
 
-        ConstellationManager.StartConsetllation(consId);
+        ConstellationManager.StartConsetllation(consId, playPuzzleMusic);
 
         // play through text
         List<DialogueScene> dialogueScenes = speechHolder.GetComponentsInChildren<DialogueScene>().ToList();

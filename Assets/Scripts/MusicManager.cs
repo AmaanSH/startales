@@ -20,7 +20,7 @@ public class MusicManager : MonoBehaviour
 
     public List<Music> music;
 
-    private float duration = 0.5f;
+    private float duration = 1.0f;
 
     private void Awake()
     {
