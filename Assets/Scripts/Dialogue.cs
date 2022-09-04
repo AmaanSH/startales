@@ -10,10 +10,8 @@ public class Dialogue : MonoBehaviour
 {
     public static Dialogue instance;
 
-    public GameObject speechPanel;
-
-    public Sprite consSprite;
-    public Sprite normalSprite;
+    public GameObject normal;
+    public GameObject cons;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
@@ -91,20 +89,20 @@ public class Dialogue : MonoBehaviour
 
         if (character == Character.None)
         {
-            nameText.transform.parent.gameObject.SetActive(false);
+            nameText.gameObject.SetActive(false);
             
             CharacterPanel.instance.SetGreyscale();
         }
         else
         {
-            nameText.transform.parent.gameObject.SetActive(true);
+            nameText.gameObject.SetActive(true);
             
             CharacterPanel.instance.SetTalking(character);
         }
 
         string name = Characters.GetCharacterName(character);
 
-        LogCanvas.AddEntry(name, text);
+        LogCanvas.AddEntry(name, text, Characters.GetCharacterSprite(character));
 
         if (characterInSpeech)
         {
@@ -122,6 +120,9 @@ public class Dialogue : MonoBehaviour
             {
                 characterImage.gameObject.SetActive(false);
             }
+
+            normal.SetActive(false);
+            cons.SetActive(true);
         }
         else
         {
@@ -129,6 +130,9 @@ public class Dialogue : MonoBehaviour
             characterImage.gameObject.SetActive(false);
 
             constellationMode = false;
+
+            normal.SetActive(true);
+            cons.SetActive(false);
         }
 
         finished = false;

@@ -18,12 +18,12 @@ public class LogCanvas : MonoBehaviour
         }
     }
 
-    public static void AddEntry(string character, string text)
+    public static void AddEntry(string character, string text, Sprite sprite)
     {
         if (instance)
         {
             LogEntry logEntry = Instantiate(instance.entry, instance.holder.transform);
-            logEntry.SetText(character, text);
+            logEntry.SetText(character, text, sprite);
             logEntry.gameObject.SetActive(true);
         }        
     }
