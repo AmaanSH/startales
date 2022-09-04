@@ -53,7 +53,7 @@ public class Dialogue : MonoBehaviour
             currentIndex = 0;
             speeches = new List<Speech>();
             
-            if (ConstellationManager.GetMode() == Mode.VN)
+            if (ConstellationManager.instance.consCompleted)
             {
                 // assume the constellation is already done
                 ConstellationManager.Cleanup();

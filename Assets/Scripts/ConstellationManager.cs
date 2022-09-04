@@ -22,6 +22,9 @@ public class ConstellationManager : MonoBehaviour
 
     public Image blocker;
 
+    [HideInInspector]
+    public bool consCompleted;
+
     private ConstellationTile _selected;
     private LineRenderer _line;
 
@@ -31,12 +34,19 @@ public class ConstellationManager : MonoBehaviour
 
     private Mode mode;
 
+    private Vector3 defaultPositionCamera;
+
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+    }
+
+    private void Start()
+    {
+        defaultPositionCamera = Camera.main.transform.position;
     }
 
     public static Mode GetMode()
@@ -114,6 +124,7 @@ public class ConstellationManager : MonoBehaviour
         ConsHolder holder = instance.cons.Find(x => x.id == name);
         if (holder)
         {
+            instance.consCompleted = false;
             instance.currentHolder = holder;
             instance.totalConstellations = holder.consPatterns.Count;
 
@@ -128,6 +139,8 @@ public class ConstellationManager : MonoBehaviour
             {
                 MusicManager.PlayAudio("reflection");
             }
+
+            //Camera.main.transform.position = instance.defaultPositionCamera;
         }
     }
 
@@ -139,11 +152,13 @@ public class ConstellationManager : MonoBehaviour
 
         if (instance.completedCount == instance.totalConstellations)
         {
-            SetMode(Mode.VN);
+            instance.consCompleted = true;
 
             // only continue if the story segement is over
             if (Dialogue.instance.storyCompleted)
             {
+                SetMode(Mode.VN);
+
                 Dialogue.instance.StopAllCoroutines();
                 Director.Next();
 
@@ -160,6 +175,8 @@ public class ConstellationManager : MonoBehaviour
 
     public static void Cleanup()
     {
+        SetMode(Mode.VN);
+
         instance.currentHolder.gameObject.SetActive(false);
         CharacterPanel.instance.Show(true);
 
