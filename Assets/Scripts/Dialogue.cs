@@ -12,6 +12,9 @@ public class Dialogue : MonoBehaviour
 
     public GameObject speechPanel;
 
+    public Sprite consSprite;
+    public Sprite normalSprite;
+
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
     public Image characterImage;
@@ -26,9 +29,6 @@ public class Dialogue : MonoBehaviour
 
     [HideInInspector]
     public bool storyCompleted;
-
-    private Vector3 normalPosition = new Vector3(1250, 780, 0);
-    private Vector3 constellationPosition = new Vector3(1110, 0, 0);
 
     private void Awake()
     {
@@ -108,10 +108,7 @@ public class Dialogue : MonoBehaviour
 
         if (characterInSpeech)
         {
-            constellationMode = true;
-
-            speechPanel.transform.position = constellationPosition;
-            
+            constellationMode = true;     
             CharacterPanel.instance.Show(false);
 
             if (character != Character.None)
@@ -132,9 +129,6 @@ public class Dialogue : MonoBehaviour
             characterImage.gameObject.SetActive(false);
 
             constellationMode = false;
-
-            // SUPER HACKY
-            speechPanel.transform.position = normalPosition;
         }
 
         finished = false;
