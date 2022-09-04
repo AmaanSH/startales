@@ -42,13 +42,13 @@ public class Characters : MonoBehaviour
         switch (character)
         {
             case Character.Guitarist:
-                return "Guitarist";
+                return "Eji";
             case Character.Singer:
-                return "Singer";
+                return "Yuu";
             case Character.Keyboard:
-                return "Keyboard";
+                return "Kei";
             case Character.Drummer:
-                return "Drummer";
+                return "Fuyumi";
         }
 
         return "";

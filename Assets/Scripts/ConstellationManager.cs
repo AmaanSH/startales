@@ -104,7 +104,7 @@ public class ConstellationManager : MonoBehaviour
         }
 
         // clamp camera so it does not move past the top or bottom or left or right of the plane
-        float clampNumber = 2;
+        float clampNumber = 1.5F;
         Camera.main.transform.position = new Vector3(Mathf.Clamp(Camera.main.transform.position.x, plane.position.x - clampNumber, plane.position.x + clampNumber), Mathf.Clamp(Camera.main.transform.position.y, plane.position.y - clampNumber, plane.position.y + clampNumber), Camera.main.transform.position.z);
     }
 

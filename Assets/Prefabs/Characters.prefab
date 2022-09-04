@@ -46,10 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - character: 0
-    sprite: {fileID: 21300000, guid: 45a103fc27d20d049a67ffb364cdf9ac, type: 3}
+    sprite: {fileID: 21300000, guid: e9b122e601db0634bb56827bb4dda9be, type: 3}
   - character: 1
-    sprite: {fileID: 21300000, guid: 45a103fc27d20d049a67ffb364cdf9ac, type: 3}
+    sprite: {fileID: 21300000, guid: 435b438e8fe96bc428a5bca0e51f6487, type: 3}
   - character: 2
-    sprite: {fileID: 21300000, guid: 45a103fc27d20d049a67ffb364cdf9ac, type: 3}
+    sprite: {fileID: 21300000, guid: 908f156e061c46e459354b7a892f1ed1, type: 3}
   - character: 3
-    sprite: {fileID: 21300000, guid: 45a103fc27d20d049a67ffb364cdf9ac, type: 3}
+    sprite: {fileID: 21300000, guid: 385ede08abce8834b9e2ceb0661acffb, type: 3}
