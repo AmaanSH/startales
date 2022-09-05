@@ -16,6 +16,9 @@ public class Dialogue : MonoBehaviour
     public Button skipButton;
     public Button skipButtonNormal;
 
+    public GameObject progressNormal;
+    public GameObject progress;
+
     public TextMeshProUGUI nameTextNormal;
     public TextMeshProUGUI speechTextNorma;
 
@@ -119,8 +122,11 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator SetText(string text, Character character, bool characterInSpeech)
     {
+        GameObject progressGc = (characterInSpeech) ? progress : progressNormal;
+        progressGc.SetActive(false);
+        
+
         gameObject.SetActive(true);
-        skipped = false;
 
         if (character == Character.None)
         {
@@ -141,7 +147,7 @@ public class Dialogue : MonoBehaviour
 
         TextMeshProUGUI holderText = (characterInSpeech) ? speechText : speechTextNorma;
         TextMeshProUGUI holderName = (characterInSpeech) ? nameText : nameTextNormal;
-
+        
         if (characterInSpeech)
         {
             constellationMode = true;     
@@ -232,6 +238,10 @@ public class Dialogue : MonoBehaviour
         if (constellationMode)
         {
             StartCoroutine(AutoSkip());
+        }
+        else
+        {
+            progressGc.SetActive(true);
         }
     }
 

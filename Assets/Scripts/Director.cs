@@ -22,6 +22,11 @@ public class Director : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        LoadScene(0);
+    }
+
     public static void LoadScene(int index)
     {
         if (index >= instance.scenes.Count)

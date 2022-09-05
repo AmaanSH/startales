@@ -153,7 +153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &18706528
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 0
-    text: ' Eh?? How?'
+    text: Eh?? How?
 --- !u!1001 &25448302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &29828674
 MonoBehaviour:
@@ -568,7 +568,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: Fuyumi!
+    text: Seriously, Fuyumi!?
 --- !u!1 &45945884
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +699,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &52184712
 MonoBehaviour:
@@ -717,7 +717,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 3
-    text: " I\u2026 I never knew"
+    text: "I\u2026 I never knew my sister consulted you"
 --- !u!1 &54637712
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
   speech:
     character: 3
     text: "Plus it would help my parents get more convinced I\u2019m doing this for
-      the music and the passion"
+      the music out of passion."
 --- !u!1 &60174267
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +901,7 @@ MonoBehaviour:
   speech:
     character: 2
     text: "Well, it\u2019s not that much of an exciting story. Me and Kei were in
-      the same class but we only talked to each other during this school trip. We
+      the same class but we only talked to each other during that school trip. We
       had to sit next together in the bus there."
 --- !u!1 &66565277
 GameObject:
@@ -951,7 +951,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: " I wouldn\u2019t say exploded, we just got more popular"
+    text: "I wouldn\u2019t say exploded, we just got more popular"
 --- !u!1001 &67554593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: Hey what about me? I had to be the one organizing everything
+    text: Hey what about me? I had to be the one organising everything
 --- !u!1 &68163955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1229,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &68922557
 MonoBehaviour:
@@ -1595,8 +1595,8 @@ MonoBehaviour:
   speech:
     character: 1
     text: "And I think it\u2019s a good idea. I\u2019m serious. I wanted our music
-      to be true to ourselves, I don\u2019t mind us using that to our advantage because
-      it\u2019s still true to us"
+      to be true to ourselves. I don\u2019t mind us using that to our advantage because
+      it\u2019s still authentically our music."
 --- !u!1001 &76895141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1794,7 +1794,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 0
-    text: ' I can see it now! Local band won the chance to perform in their birthplace!'
+    text: I can see it now! Local band won the chance to perform in their birthplace!
 --- !u!1 &90798015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,7 +2246,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: "Besides, Eji was right. All I did was about music back then and I didn\u2019t
+    text: " Besides, Eji was right. All I did was about music back then and I didn\u2019t
       even realize until you stopped talking to me for a bit"
 --- !u!1 &133399727
 GameObject:
@@ -2734,7 +2734,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239428378}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &163610340
 MonoBehaviour:
@@ -2752,7 +2752,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 0
-    text: and I said I was sorry! Besides, back then you wanted to keep your epic
+    text: And I said I was sorry! Besides, back then you wanted to keep your epic
       drumming a secret and I wanted to protect that
 --- !u!1001 &165238592
 PrefabInstance:
@@ -2947,7 +2947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1 &191011701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,7 +3141,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: ' Besides it was you who encouraged us to play even when no one was around. '
+    text: Besides it was you who encouraged us to play even when no one was around.
 --- !u!1 &211707899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,7 +3191,7 @@ MonoBehaviour:
   speech:
     character: 1
     text: "Tell me about it, I spent so much time in the bedroom working with songs
-      with Eji and then suddenly I turn around and he\u2019s not there"
+      with Eji and then suddenly I turn around and he\u2019s not there."
 --- !u!1001 &214911311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3480,6 +3480,7 @@ Transform:
   - {fileID: 1650082400}
   - {fileID: 1041476805}
   - {fileID: 918233246}
+  - {fileID: 1846720934}
   - {fileID: 1651052744}
   - {fileID: 163610339}
   - {fileID: 1603654369}
@@ -5333,8 +5334,8 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 0
-    text: 'And this is why when I figured that out listening to both of you, I trapped
-      you two in the music room to talk it out '
+    text: This is why after listening to both of you, I trapped you two in the music
+      room to talk it out
 --- !u!1 &316062983
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,7 +6381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &364452849
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6815,7 +6816,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: Yeah, I think it is
+    text: Actually, I think it is.
 --- !u!1 &381128951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7061,7 +7062,7 @@ MonoBehaviour:
   blocker: 0
   characterImageInSpeech: 1
   speech:
-    character: 4
+    character: 3
     text: (Hmm...)
 --- !u!1 &403355436
 GameObject:
@@ -7639,8 +7640,8 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: ' I do! Going for walks to help me cool my head really helped me relax
-      and get me out of my shell'
+    text: "I don\u2019t think about music all the time! Going for walks really helped
+      me relax and get me out of the music obsession I was in. "
 --- !u!1 &441014518
 GameObject:
   m_ObjectHideFlags: 0
@@ -7689,7 +7690,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: 'By having a bonfire in the middle of nowhere? '
+    text: By having a bonfire in the middle of nowhere?
 --- !u!1 &442473168
 GameObject:
   m_ObjectHideFlags: 0
@@ -7891,7 +7892,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 0
-    text: " I mean, considering the scene I saw when I came in it\u2019s rightfully
+    text: "I mean, considering the scene I saw when I came in it\u2019s rightfully
       deserved."
 --- !u!1 &457966987
 GameObject:
@@ -8298,7 +8299,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: "Right? Back then only me and keyboard wanted to start a band\u2026."
+    text: "Right? Back then only me and Kei wanted to start a band\u2026."
 --- !u!1 &482464426
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,7 +8348,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: ' It was a tough spot'
+    text: It was a tough spot
 --- !u!1 &485833394
 GameObject:
   m_ObjectHideFlags: 0
@@ -8694,8 +8695,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: "Yeah, you\u2019re important to the band after all, we don\u2019t want
-      to make it difficult for you"
+    text: "Yeah, you\u2019re important to the band after all, we didn\u2019t want
+      to make it difficult for you at the time"
 --- !u!1 &525802880
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,8 +8996,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 3
-    text: ' Save it for tomorrow, we have our music video to film there right? For
-      the event promotion?'
+    text: Save it for tomorrow, we have our music video to film there right? For
+      the event promotion?
 --- !u!1 &544765624
 GameObject:
   m_ObjectHideFlags: 0
@@ -9045,8 +9046,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: "We don\u2019t need to talk about if you want, we all had our bad moments
-      here"
+    text: "We don\u2019t need to talk about it if you don\u2019t want to, we all
+      had our bad moments then."
 --- !u!1 &566805665
 GameObject:
   m_ObjectHideFlags: 0
@@ -10016,7 +10017,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11449,7 +11450,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &732035045
 MonoBehaviour:
@@ -11517,56 +11518,7 @@ MonoBehaviour:
   speech:
     character: 3
     text: "Only because my sister pleaded for my case. I wouldn\u2019t be here if
-      she didn\u2019t believe in me. "
---- !u!1 &751246238
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 751246239}
-  - component: {fileID: 751246240}
-  m_Layer: 0
-  m_Name: keyboard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &751246239
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751246238}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.78, y: 3.473824, z: -97.724396}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1240226528}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &751246240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751246238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blocker: 0
-  characterImageInSpeech: 1
-  speech:
-    character: 1
-    text: And we were okay, in fact we were great when people started to come in
+      she didn\u2019t believe in me."
 --- !u!1 &753064222
 GameObject:
   m_ObjectHideFlags: 0
@@ -12047,7 +11999,7 @@ MonoBehaviour:
   speech:
     character: 3
     text: Yeah, it feels like everything's about to change and we're starting a new
-      chapter together- as StarTales
+      chapter together- as StarTales.
 --- !u!1 &776998226
 GameObject:
   m_ObjectHideFlags: 0
@@ -12194,7 +12146,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: Is that why you had to keep leaving band practice earlier
+    text: Is that why you had to keep leaving band practice earlier?
 --- !u!1 &782583965
 GameObject:
   m_ObjectHideFlags: 0
@@ -12929,7 +12881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1001 &809823113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14337,7 +14289,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 0
-    text: no no, compliment her more she deserves it
+    text: No no, compliment her more she deserves it
 --- !u!1 &895131021
 GameObject:
   m_ObjectHideFlags: 0
@@ -14893,7 +14845,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 3
-    text: Well you know how much everything kinda exploded after the school festiva
+    text: Well you know how much everything  exploded after the school festival
 --- !u!1 &926679824
 GameObject:
   m_ObjectHideFlags: 0
@@ -14924,7 +14876,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &926679826
 MonoBehaviour:
@@ -14988,7 +14940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1001 &936553623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15168,7 +15120,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &939382223
 MonoBehaviour:
@@ -15186,10 +15138,10 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: Even in that tense part of the band, I told her that yeah, Fuyumi was happy
-      in the band. I then asked her why and she told me how you were standing up
-      to your parents and it actually made me realize how much of a bad friend I
-      was.
+    text: Even in that tense period of the band, I told her that yeah, Fuyumi was
+      happy in the band. I asked her why and she told me how you were standing up
+      to your parents and it actually made me realise how little I knew about you,
+      as a friend.
 --- !u!1001 &941132050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15471,9 +15423,9 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 3
-    text: 'Yeah, we were friends in middle school and I knew Yuu was into watching
+    text: Yeah, we were friends in middle school and I knew Yuu was into watching
       anime, so I asked if she wanted to watch a few of my favourite animes with
-      me '
+      me
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -15990,7 +15942,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: 'Right, you never really told us the story of how you did that. '
+    text: Right, you never really told us the story of how you did that.
 --- !u!1 &1022596321
 GameObject:
   m_ObjectHideFlags: 0
@@ -16089,7 +16041,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: Is that how you two met?
+    text: Is that how you two met? Because you got Yuu into music?
 --- !u!1001 &1032991485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17607,7 +17559,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 3
-    text: Yeah! Especially when there was no one there at first
+    text: Yeah! It hurted us a lot when the curtains opened and no one was there.
 --- !u!1 &1148312087
 GameObject:
   m_ObjectHideFlags: 0
@@ -17656,7 +17608,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 0
-    text: Oh god how could I forget?
+    text: How could I forget?
 --- !u!1001 &1158797159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17854,7 +17806,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: "Are you sure? I don\u2019t want to get over my head again"
+    text: Are you sure?
 --- !u!1 &1181016835
 GameObject:
   m_ObjectHideFlags: 0
@@ -17903,7 +17855,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: "It\u2019s no problem and it helped the teachers like you"
+    text: It was no problem. The fact that teachers already allowed you to practise
+      after school helped too.
 --- !u!1 &1181685732
 GameObject:
   m_ObjectHideFlags: 0
@@ -17948,7 +17901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1001 &1183571105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18547,7 +18500,7 @@ MonoBehaviour:
   speech:
     character: 0
     text: "She stayed at my place for a whole week until her parents conceded and
-      let her play the drums as long as her grades didn\u2019t slip"
+      let her play the drums as long as her grades didn\u2019t slip."
 --- !u!1 &1212782810
 GameObject:
   m_ObjectHideFlags: 0
@@ -18744,8 +18697,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: "It was the greatest moment of my life. Our music was touching everyone\u2019s
-      heart."
+    text: "It was one of the greatest moments of my life. I felt like our music touched
+      everyone\u2019s hearts."
 --- !u!1 &1217986312
 GameObject:
   m_ObjectHideFlags: 0
@@ -18839,7 +18792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1 &1234103446
 GameObject:
   m_ObjectHideFlags: 0
@@ -18933,7 +18886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1 &1237481939
 GameObject:
   m_ObjectHideFlags: 0
@@ -18983,7 +18936,7 @@ MonoBehaviour:
   speech:
     character: 2
     text: "And I take full responsibility for that. I should\u2019ve made sure the
-      flyers had the right time before it was sent out"
+      flyers had the right time before it was sent out."
 --- !u!1 &1240226527
 GameObject:
   m_ObjectHideFlags: 0
@@ -19037,7 +18990,6 @@ Transform:
   - {fileID: 362639449}
   - {fileID: 2107742478}
   - {fileID: 1888282929}
-  - {fileID: 751246239}
   - {fileID: 1903520552}
   - {fileID: 1667712360}
   m_Father: {fileID: 294027058}
@@ -19123,7 +19075,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1254722654
 MonoBehaviour:
@@ -19270,7 +19222,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: "I don\u2019t mind talking about it too, I mean I\u2019ve changed now.
+    text: "I don\u2019t mind talking about myself too, I mean I\u2019ve changed now.
       And we made a killer song out of it too right, Kei?"
 --- !u!1001 &1264498024
 PrefabInstance:
@@ -19566,8 +19518,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 0
-    text: An essential moment! A time to reflect our passing life before fall comes
-      again
+    text: "It\u2019s an essential moment, Kei! A time to reflect our passing life
+      before fall comes again"
 --- !u!1001 &1289828343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19859,7 +19811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8bb693577dc84bd42a3d999b21eafa94, type: 3}
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1001 &1298033252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20355,7 +20307,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 3
-    text: " Don\u2019t tell me we\u2019re having another argument about this again"
+    text: "Don\u2019t tell me we\u2019re having another argument about this again"
 --- !u!1001 &1334322500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20652,7 +20604,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239428378}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1343576815
 MonoBehaviour:
@@ -20669,7 +20621,7 @@ MonoBehaviour:
   blocker: 0
   characterImageInSpeech: 1
   speech:
-    character: 4
+    character: 2
     text: (Hmm...)
 --- !u!1001 &1347485689
 PrefabInstance:
@@ -21159,7 +21111,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239428378}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1361842225
 MonoBehaviour:
@@ -21691,7 +21643,7 @@ MonoBehaviour:
   speech:
     character: 3
     text: "But I need to ask something first. I\u2019m glad it helped Eji grow and
-      I\u2019m flattered that Kei finds it inspiring but how did I help you Yuu?"
+      I\u2019m flattered that Kei finds it inspiring but how did I help you, Yuu?"
 --- !u!1 &1426008839
 GameObject:
   m_ObjectHideFlags: 0
@@ -22373,7 +22325,7 @@ GameObject:
   - component: {fileID: 1447927766}
   - component: {fileID: 1447927767}
   m_Layer: 0
-  m_Name: singer
+  m_Name: drummer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22409,9 +22361,54 @@ MonoBehaviour:
   blocker: 0
   characterImageInSpeech: 0
   speech:
-    character: 0
+    character: 3
     text: Not what happened with Eji and Kei, I mean that was important but I stood
       up to my parents around that time. And I want to be proud of that.
+--- !u!1 &1450735907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450735908}
+  - component: {fileID: 1450735909}
+  m_Layer: 0
+  m_Name: background (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450735908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450735907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -489.29678, y: -98.063034, z: -37.559814}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1764272883}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1450735909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450735907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4dabdd2cb41464a802e96ec2e6491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 2b95512f4caaf0a4b9cb089006055ffa, type: 3}
 --- !u!1 &1453825854
 GameObject:
   m_ObjectHideFlags: 0
@@ -22509,8 +22506,8 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: And it took me a while to realize that I was listening more to the haters
-      than my own bandmates.
+    text: It took me a while to realise that I was listening more to the haters than
+      my own bandmates.
 --- !u!1 &1464392555
 GameObject:
   m_ObjectHideFlags: 0
@@ -22559,8 +22556,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 0
-    text: "Don\u2019t forget the local community too, someone putted some videos
-      of us on youtube"
+    text: "Don\u2019t forget the local community too, someone put up videos of us
+      on YouTube."
 --- !u!1001 &1466023064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23007,7 +23004,7 @@ MonoBehaviour:
   speech:
     character: 2
     text: "No, we found each other around the stars. This is where we\u2019re going
-      to get our big break. I can feel it"
+      to get our big break. I can feel it."
 --- !u!1001 &1485254293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23187,7 +23184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1486327311
 MonoBehaviour:
@@ -23205,7 +23202,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: Actually, I have a confession to make. I knew this story before today
+    text: ' Actually, I have a confession to make. I knew about this story before'
 --- !u!1 &1499883003
 GameObject:
   m_ObjectHideFlags: 0
@@ -23413,7 +23410,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1522228268
 MonoBehaviour:
@@ -23432,8 +23429,8 @@ MonoBehaviour:
   speech:
     character: 2
     text: "Not only was I listening to the haters more than the band, but I tried
-      to take control of the band and that\u2019s not what this band was about. It\u2019s
-      about friends and having fun and just making great music together"
+      to take control of our direction and that\u2019s not what this band was about.
+      It\u2019s about doing great music together, this is why we started."
 --- !u!1 &1537246723
 GameObject:
   m_ObjectHideFlags: 0
@@ -23481,7 +23478,7 @@ MonoBehaviour:
   blocker: 0
   characterImageInSpeech: 1
   speech:
-    character: 4
+    character: 1
     text: Hmm
 --- !u!1 &1538127670
 GameObject:
@@ -23513,7 +23510,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1538127672
 MonoBehaviour:
@@ -23531,8 +23528,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: 'Hmmm, friendship but also staying true to oneself and only if Fuyumi would
-      be okay about that '
+    text: Hmmm, friendship but also staying true to oneself and only if Fuyumi would
+      be okay about it.
 --- !u!1 &1541893827
 GameObject:
   m_ObjectHideFlags: 0
@@ -24273,7 +24270,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: 'Yeah it was fun to see where we went before doing our next great thing '
+    text: Yeah it was fun to see where we went before doing our next great thing
 --- !u!1001 &1571436994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24650,7 +24647,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239428378}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1603654370
 MonoBehaviour:
@@ -24717,7 +24714,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: "How could we not invent you? That was the coolest solo we\u2019ve ever
+    text: "How could we not invite you? That was the coolest solo we\u2019ve ever
       heard!"
 --- !u!1 &1608136470
 GameObject:
@@ -24997,7 +24994,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1619948707
 MonoBehaviour:
@@ -25362,8 +25359,9 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 0
-    text: Are you kidding? I know the festival helped me find the passion and break
-      all of my insecurities but it was you who actually got me into music.
+    text: "Are you kidding? It\u2019s the festival that helped me find the passion
+      and break out of all my insecurities but it was you who actually got me into
+      music."
 --- !u!1001 &1639618624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25642,7 +25640,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239428378}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1651052745
 MonoBehaviour:
@@ -25660,7 +25658,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 3
-    text: Yuu, it was also your fault for jumping conclusions
+    text: Yuu, it was also your fault for jumping to conclusions
 --- !u!1 &1652160838
 GameObject:
   m_ObjectHideFlags: 0
@@ -25769,7 +25767,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: "Oh yeah\u2026 this part of the story"
+    text: "Oh yeah\u2026 this part of our history"
 --- !u!1001 &1661113830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26098,7 +26096,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1240226528}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1667712361
 MonoBehaviour:
@@ -26115,7 +26113,7 @@ MonoBehaviour:
   blocker: 0
   characterImageInSpeech: 1
   speech:
-    character: 4
+    character: 1
     text: (Hmm...)
 --- !u!1 &1673551523
 GameObject:
@@ -27299,6 +27297,7 @@ Transform:
   - {fileID: 1499883004}
   - {fileID: 251719672}
   - {fileID: 1269813955}
+  - {fileID: 1450735908}
   - {fileID: 1254722653}
   - {fileID: 1486327310}
   - {fileID: 18706527}
@@ -27644,7 +27643,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 3
-    text: It was truly the day (band name) was born
+    text: It was truly the day StarTales was born
 --- !u!1 &1785562184
 GameObject:
   m_ObjectHideFlags: 0
@@ -27776,8 +27775,8 @@ MonoBehaviour:
   speech:
     character: 0
     text: "I mean, it kinda was for me. Like I found this cool passion for music
-      and it\u2019s great! And then suddenly the band started fighting and I don\u2019t
-      know\u2026"
+      and it\u2019s great! And then suddenly the band started fighting and I didn\u2019t
+      know what to do\u2026"
 --- !u!1 &1807583079
 GameObject:
   m_ObjectHideFlags: 0
@@ -28133,7 +28132,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 2
-    text: 'You sound like an old man, Yuu '
+    text: You sound like an old man, Yuu
 --- !u!1 &1829312763
 GameObject:
   m_ObjectHideFlags: 0
@@ -28241,6 +28240,55 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1846720933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846720934}
+  - component: {fileID: 1846720935}
+  m_Layer: 0
+  m_Name: diagloue-guitar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846720934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846720933}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.836783, y: 3.473824, z: -97.724396}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 239428378}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846720935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846720933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eaabf748c0996428cfb5032f4c5e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocker: 0
+  characterImageInSpeech: 1
+  speech:
+    character: 2
+    text: Yeah especially you Kei, you were so adamant for her to join
 --- !u!1001 &1853647573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28835,7 +28883,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: Yeah that was a great song, one of our best
+    text: Yeah that was a great song, one of our best.
 --- !u!1001 &1884370566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29214,7 +29262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1240226528}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1903520553
 MonoBehaviour:
@@ -29646,7 +29694,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 0
-    text: How can I not find you so cool and awesome after all of that?
+    text: "You have no idea how grateful I am for that after everything we\u2019ve
+      done."
 --- !u!1 &1935804625
 GameObject:
   m_ObjectHideFlags: 0
@@ -29695,8 +29744,8 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 1
-    text: I just think, wow Fuyumi is so cool to stand up to her beliefs, we should
-      make something out of this. But what do you guys think?
+    text: I just think, wow Fuyumi is so cool for standing up for her beliefs, we
+      should make something out of this. But what do you guys think?
 --- !u!1 &1947751511
 GameObject:
   m_ObjectHideFlags: 0
@@ -29910,7 +29959,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 239428378}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1955123817
 MonoBehaviour:
@@ -30446,7 +30495,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764272883}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1982030107
 MonoBehaviour:
@@ -30621,9 +30670,9 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: "I hated the fight but I hated to be wrong when all I wanted back then
-      was to make sure that we wouldn\u2019t lose this momentum we gained at the
-      school festival"
+    text: "I hated the fight but I hated to be wrong. All I wanted back then was
+      to make sure that we wouldn\u2019t lose this momentum we gained at the school
+      festival."
 --- !u!1 &1988685200
 GameObject:
   m_ObjectHideFlags: 0
@@ -31076,8 +31125,8 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 2
-    text: 'Or tried to take our spots, like come on it was clear I was the guitarist
-      and yet people with guitars kept coming '
+    text: Or tried to take our spots, like come on it was clear I was the guitarist
+      and yet people with guitars kept coming
 --- !u!1 &2051939324
 GameObject:
   m_ObjectHideFlags: 0
@@ -31126,7 +31175,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 3
-    text: " Wait, is that the same place we\u2019re going to play next week?"
+    text: "Wait, is that the same place we\u2019re going to play next week?"
 --- !u!1 &2052636747
 GameObject:
   m_ObjectHideFlags: 0
@@ -31225,8 +31274,8 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 3
-    text: "Hey Kei, how did you and Eji meet? I don\u2019t think we actually heard
-      that story."
+    text: "Hey Kei, how did you and Eji meet? I don\u2019t think we\u2019ve actually
+      heard that story."
 --- !u!1 &2073671350
 GameObject:
   m_ObjectHideFlags: 0
@@ -31619,7 +31668,7 @@ MonoBehaviour:
   speech:
     character: 0
     text: "Now this is what I\u2019m talking about! Ah, our summer youth is being
-      spent so well! "
+      spent so well!"
 --- !u!1001 &2084608033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32511,7 +32560,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: " I don\u2019t think anyone could ever forget their first gig."
+    text: "I don\u2019t think anyone could ever forget their first gig."
 --- !u!1001 &2101079519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32907,7 +32956,7 @@ MonoBehaviour:
   characterImageInSpeech: 0
   speech:
     character: 1
-    text: You mean you convinced the rest of us to follow your lead
+    text: You mean you convinced the rest of us to follow your lead Eiji
 --- !u!1 &2107742477
 GameObject:
   m_ObjectHideFlags: 0
@@ -33154,7 +33203,7 @@ MonoBehaviour:
   characterImageInSpeech: 1
   speech:
     character: 0
-    text: Oh god I was so nervous that day, like we had the whole gym hall to ourselves!
+    text: I was so nervous that day, like we had the whole gym hall to ourselves!
 --- !u!1001 &2143564403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33926,6 +33975,14 @@ PrefabInstance:
     - target: {fileID: 1842446286161444015, guid: c04fc42fe6beebb4c81390e256ab19b9, type: 3}
       propertyPath: m_Name
       value: Logs
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242070500965771382, guid: c04fc42fe6beebb4c81390e256ab19b9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.390869
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242070500965771382, guid: c04fc42fe6beebb4c81390e256ab19b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.17816162
       objectReference: {fileID: 0}
     - target: {fileID: 5201937281169228617, guid: c04fc42fe6beebb4c81390e256ab19b9, type: 3}
       propertyPath: m_AnchorMax.x
