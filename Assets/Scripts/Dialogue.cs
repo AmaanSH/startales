@@ -191,8 +191,6 @@ public class Dialogue : MonoBehaviour
 
         yield return null;
 
-        Debug.Log(holderText.text);
-
         int counter = 0;
         int totalVisibleCharacters = holderText.textInfo.characterCount;
 

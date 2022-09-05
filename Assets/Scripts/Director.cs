@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Director : MonoBehaviour
 {
@@ -23,15 +24,23 @@ public class Director : MonoBehaviour
 
     public static void LoadScene(int index)
     {
-        if (instance)
+        if (index >= instance.scenes.Count)
         {
-            Debug.LogFormat("Starting scene {0}/{1}", index + 1, instance.scenes.Count);
+            // okay load the credit scene pog
+            SceneManager.LoadScene("Credits");
+        }
+        else
+        {
+            if (instance)
+            {
+                Debug.LogFormat("Starting scene {0}/{1}", index + 1, instance.scenes.Count);
 
-            instance.currentScenes = instance.scenes[index].coreScenes;
-            instance.currentSceneIndex = index;
-            instance.currentIndex = 0;
+                instance.currentScenes = instance.scenes[index].coreScenes;
+                instance.currentSceneIndex = index;
+                instance.currentIndex = 0;
 
-            instance.StartCoroutine(Play());
+                instance.StartCoroutine(Play());
+            }
         }
     }
 
