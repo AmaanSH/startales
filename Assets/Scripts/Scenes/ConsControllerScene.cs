@@ -9,11 +9,6 @@ public class ConsControllerScene : CoreScene
 
     public override IEnumerator Play()
     {
-        if (cleanup)
-        {
-            ConstellationManager.Cleanup();
-        }
-
         Director.Next();
 
         yield return null;

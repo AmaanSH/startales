@@ -970,7 +970,6 @@ MonoBehaviour:
   nameText: {fileID: 695031689904706697}
   speechText: {fileID: 5419540061251192470}
   characterImage: {fileID: 419509367435306706}
-  storyCompleted: 0
 --- !u!114 &4896603168649182207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,7 +1429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -56, y: 34.6}
+  m_AnchoredPosition: {x: -56, y: 32}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &6931125748407895083
@@ -1965,7 +1964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 467.4, y: 17}
+  m_AnchoredPosition: {x: 467.4, y: -35}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3079590559622557186

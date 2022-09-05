@@ -13,11 +13,9 @@ public class ConsScene : CoreScene
     {
         ConstellationManager.SetMode(Mode.Constellation);
 
-        ConstellationManager.StartConsetllation(consId, playPuzzleMusic);
-
-        // play through text
         List<DialogueScene> dialogueScenes = speechHolder.GetComponentsInChildren<DialogueScene>().ToList();
-        Dialogue.instance.LoadDialogues(dialogueScenes);
+
+        yield return StartCoroutine(ConstellationManager.StartConsetllation(consId, playPuzzleMusic, dialogueScenes));
 
         yield return null;
     }

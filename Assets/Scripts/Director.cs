@@ -31,8 +31,7 @@ public class Director : MonoBehaviour
     {
         if (index >= instance.scenes.Count)
         {
-            // okay load the credit scene pog
-            SceneManager.LoadScene("Credits");
+            instance.StartCoroutine(instance.EndScene());
         }
         else
         {
@@ -47,6 +46,16 @@ public class Director : MonoBehaviour
                 instance.StartCoroutine(Play());
             }
         }
+    }
+
+    private IEnumerator EndScene()
+    {
+        MusicManager.Stop();
+
+        yield return new WaitForSeconds(1f);
+
+        // okay load the credit scene pog
+        SceneManager.LoadScene("Credits");
     }
 
     public static IEnumerator Play()

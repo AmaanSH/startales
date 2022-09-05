@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +17,7 @@ public class ConstellationManager : MonoBehaviour
     public Transform plane;
     public LineRenderer lineRenderer;
     public ConsCanvas consCanvas;
+    public Image blur;
 
     public List<ConsHolder> cons;
 
@@ -41,6 +44,7 @@ public class ConstellationManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            instance.blur.material.SetFloat("_Size", 0);
         }
     }
 
@@ -66,8 +70,7 @@ public class ConstellationManager : MonoBehaviour
 
     private void Update()
     {
-        // check if mouse is in focus of application
-        if (Application.isFocused && mode == Mode.Constellation)
+        if (mode == Mode.Constellation)
         {
             Vector3 mousePosition = Input.mousePosition;
             Vector3 viewportMousePosition = new Vector2(mousePosition.x / Screen.width, mousePosition.y / Screen.height);
@@ -119,11 +122,48 @@ public class ConstellationManager : MonoBehaviour
         Camera.main.transform.position = new Vector3(Mathf.Clamp(Camera.main.transform.position.x, plane.position.x - clampNumber, plane.position.x + clampNumber), Mathf.Clamp(Camera.main.transform.position.y, plane.position.y - clampNumber, plane.position.y + clampNumber), Camera.main.transform.position.z);
     }
 
-    public static void StartConsetllation(string name, bool playMusic)
+    private IEnumerator Blur()
+    {
+        float size = instance.blur.material.GetFloat("_Size");
+        float blurAmount = 2f;
+
+        while (size < (blurAmount - 0.05f))
+        {
+            instance.blur.material.SetFloat("_Size", Mathf.Lerp(size, blurAmount, Time.deltaTime * 2));
+            size = instance.blur.material.GetFloat("_Size");
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator UnBlur()
+    {
+        float size = instance.blur.material.GetFloat("_Size");
+        float blurAmount = 0;
+
+        while (Mathf.Floor(size) > blurAmount)
+        {
+            instance.blur.material.SetFloat("_Size", Mathf.Lerp(size, blurAmount, Time.deltaTime * 2));
+            size = instance.blur.material.GetFloat("_Size");
+
+            yield return null;
+        }
+
+        instance.blur.material.SetFloat("_Size", 0);
+    }
+
+
+    private List<DialogueScene> dialogue = new List<DialogueScene>();
+    public static IEnumerator StartConsetllation(string name, bool playMusic, List<DialogueScene> dialogueScenes)
     {
         ConsHolder holder = instance.cons.Find(x => x.id == name);
+
+        instance.dialogue = dialogueScenes;
+
         if (holder)
         {
+            yield return instance.Blur();
+            
             instance.consCompleted = false;
             instance.currentHolder = holder;
             instance.totalConstellations = holder.consPatterns.Count;
@@ -140,7 +180,7 @@ public class ConstellationManager : MonoBehaviour
                 MusicManager.PlayAudio("reflection");
             }
 
-            //Camera.main.transform.position = instance.defaultPositionCamera;
+            yield return instance.UnBlur();
         }
     }
 
@@ -154,31 +194,18 @@ public class ConstellationManager : MonoBehaviour
         {
             instance.consCompleted = true;
 
-            // only continue if the story segement is over
-            if (Dialogue.instance.storyCompleted)
-            {
-                SetMode(Mode.VN);
-
-                Dialogue.instance.StopAllCoroutines();
-                Director.Next();
-
-                instance.currentHolder.gameObject.SetActive(false);
-                instance.currentHolder = null;
-                instance.totalConstellations = 0;
-                instance.completedCount = 0;
-                
-                CharacterPanel.instance.Show(true);
-                instance.consCanvas.gameObject.SetActive(false);
-            }
+            Dialogue.instance.LoadDialogues(instance.dialogue);
+            instance.dialogue = new List<DialogueScene>();
         }
     }
 
-    public static void Cleanup()
+    public static IEnumerator Cleanup()
     {
+        yield return instance.Blur();
+
         SetMode(Mode.VN);
 
         instance.currentHolder.gameObject.SetActive(false);
-        CharacterPanel.instance.Show(true);
 
         instance.currentHolder = null;
         instance.totalConstellations = 0;
@@ -186,7 +213,10 @@ public class ConstellationManager : MonoBehaviour
 
         instance.consCanvas.gameObject.SetActive(false);
 
+        CharacterPanel.instance.Show(true);
         Director.Next();
+
+        yield return instance.UnBlur();
     }
 
     public static void StartDrag(ConstellationTile tile, Vector3 point)

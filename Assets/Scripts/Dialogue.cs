@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.WSA;
-using System;
 using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
@@ -34,9 +32,6 @@ public class Dialogue : MonoBehaviour
     private List<Speech> speeches = new List<Speech>();
     private int currentIndex = 0;
 
-    [HideInInspector]
-    public bool storyCompleted;
-
     private bool skipped;
 
     private void Awake()
@@ -48,12 +43,10 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    private IEnumerator AutoSkip()
+    private void AutoSkip()
     {
         if (currentIndex < speeches.Count - 1)
         {
-            yield return new WaitForSeconds(1.0f);
-
             currentIndex++;
 
             Speech current = speeches[currentIndex];
@@ -63,23 +56,14 @@ public class Dialogue : MonoBehaviour
         {
             currentIndex = 0;
             speeches = new List<Speech>();
-            
-            if (ConstellationManager.instance.consCompleted)
-            {
-                // assume the constellation is already done
-                ConstellationManager.Cleanup();
-            }
-            else
-            {
-                storyCompleted = true;
-            }
+
+            StartCoroutine(ConstellationManager.Cleanup());
         }
     }
 
     public void LoadDialogues(List<DialogueScene> diagloueScenes)
     {
         speeches = new List<Speech>();
-        storyCompleted = false;
 
         for (int i = 0; i < diagloueScenes.Count; i++)
         {
@@ -235,29 +219,25 @@ public class Dialogue : MonoBehaviour
             holderText.maxVisibleCharacters = totalVisibleCharacters;
         }
 
-        if (constellationMode)
-        {
-            StartCoroutine(AutoSkip());
-        }
-        else
-        {
-            progressGc.SetActive(true);
-        }
+        progressGc.SetActive(true);
     }
 
     public void NextOption()
     {
-        if (!constellationMode)
+        if (!skip && !finished)
         {
-            if (!skip && !finished)
+            skip = true;
+        }
+        else
+        {
+            if (!constellationMode)
             {
-                skip = true;
+                gameObject.SetActive(false);
+                Director.Next();
             }
             else
             {
-                gameObject.SetActive(false);
-
-                Director.Next();
+                AutoSkip();
             }
         }
     }

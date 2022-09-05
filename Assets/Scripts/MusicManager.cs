@@ -52,6 +52,11 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    public static void Stop()
+    {
+        instance.StartCoroutine(instance.Fade(0));
+    }
+
     private AudioClip GetAudio(string id)
     {
         return instance.music.Find(x => x.id == id).clip;
