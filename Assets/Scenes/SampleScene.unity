@@ -3082,6 +3082,17 @@ MonoBehaviour:
     character: 0
     text: "Yeah, I organized this bonfire to talk about all the great things that
       happened to us. We don\u2019t need to bring it up if you don\u2019t want to."
+--- !u!114 &205114054 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+  m_PrefabInstance: {fileID: 5396688182992480453}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &209026241
 GameObject:
   m_ObjectHideFlags: 0
@@ -10708,6 +10719,17 @@ MonoBehaviour:
   speech:
     character: 0
     text: Awww you ruined the surprise.
+--- !u!114 &685053527 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+  m_PrefabInstance: {fileID: 5396688182992480453}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &685204744
 GameObject:
   m_ObjectHideFlags: 0
@@ -33403,6 +33425,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1829312767}
     m_Modifications:
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5396688182992480456}
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SkipButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 513255348892372389, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 680229898041728288, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -33427,6 +33477,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 2872534533175165841, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5396688182992480456}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SkipButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715695655698512988, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933976838889063087, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5303263991620442308}
+    - target: {fileID: 4933976838889063087, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: View
+      objectReference: {fileID: 0}
     - target: {fileID: 5030828666428665388, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -33459,6 +33549,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8024420700254365407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: skipButton
+      value: 
+      objectReference: {fileID: 205114054}
+    - target: {fileID: 8024420700254365407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+      propertyPath: skipButtonNormal
+      value: 
+      objectReference: {fileID: 685053527}
     - target: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -33550,6 +33648,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8848657334974947407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
   m_PrefabInstance: {fileID: 5396688182992480453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5396688182992480456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8024420700254365407, guid: eb6d593d641ff5941a285221019ffa00, type: 3}
+  m_PrefabInstance: {fileID: 5396688182992480453}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0b016283ea3d7458d51efe612b903d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5424822736021947493
 PrefabInstance:
   m_ObjectHideFlags: 0
